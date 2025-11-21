@@ -1,0 +1,28 @@
+/* league-spartan-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/league-spartan-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* roboto-condensed-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/roboto-condensed-v31-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-condensed-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/roboto-condensed-v31-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
