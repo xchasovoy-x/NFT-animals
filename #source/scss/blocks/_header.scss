@@ -4,26 +4,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .header__container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px;
-        .header__title{
-            font-family: 'Roboto Condensed';
-            font-size: 30px;
-            font-weight: 700;        
+        .header__container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            .header__title{
+                font-family: 'Roboto Condensed';
+                font-size: 30px;
+                font-weight: 700;        
+            }
         }
-    }
-    &__button_wallet{
-        text-align: center;
-        font-size: 20px;
-        line-height: 100%;
-        min-width: 280px;
-        padding: 16px;
-        border: 1px solid #fff;
-        border-radius: 30px;
-    }
+        &__button_wallet{
+            text-align: center;
+            font-size: 20px;
+            line-height: 100%;
+            min-width: 280px;
+            padding: 16px;
+            border: 1px solid #fff;
+            border-radius: 30px;
+        }
+}
+.header__group{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
 }
 .navigation{
     margin: 0 10px;
@@ -74,6 +80,11 @@
     .header{
         height: 80px;
     }
+    .header__group {
+        justify-content: end;
+        width: 66%;
+        gap: 20px;
+    }
     .navigation{
         order: 1;
     }
@@ -99,5 +110,36 @@
     }
     .navigation__list.navigation__list--active{
         transform: translateY(0%);
+    }
+}
+
+@media(max-width: 393px){
+    .header{
+        height: 60px;
+        .header__container{
+            padding: 10px;
+            .header__title{
+                font-size: 18px;
+            }
+        }
+        &__button_wallet{
+            font-size: 10px;
+            min-width: 90px;
+            padding: 14px 16px;
+        }
+    }
+    .header__group{
+        width: 60%;
+    }
+    .navigation{
+        margin: 0 10px;
+        &__list{
+            display: flex;
+            gap: 10px;
+            
+        }
+        &__link{
+            font-size: 10px; //to do hover
+        }
     }
 }
