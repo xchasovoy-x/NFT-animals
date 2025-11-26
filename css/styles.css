@@ -112,6 +112,10 @@ a {
   color: inherit;
 }
 
+button {
+  color: #fff;
+}
+
 .header {
   background-color: #151B36;
   height: 100px;
@@ -125,7 +129,7 @@ a {
   align-items: center;
   padding: 30px;
 }
-.header .header__container .header__title {
+.header .header__container .header__logo {
   font-family: "Roboto Condensed";
   font-size: 30px;
   font-weight: 700;
@@ -176,7 +180,7 @@ a {
 }
 
 @media (max-width: 1360px) {
-  .header .header__container .header__title {
+  .header .header__container .header__logo {
     font-size: 22px;
   }
   .navigation__list {
@@ -204,9 +208,8 @@ a {
   }
   .navigation__button {
     display: flex;
-  }
-  .navigation__button {
     position: relative;
+    z-index: 7;
   }
   .navigation__list {
     position: absolute;
@@ -233,7 +236,7 @@ a {
   .header .header__container {
     padding: 10px;
   }
-  .header .header__container .header__title {
+  .header .header__container .header__logo {
     font-size: 18px;
   }
   .header__button_wallet {
@@ -247,13 +250,71 @@ a {
   .navigation {
     margin: 0 10px;
   }
-  .navigation__list {
-    display: flex;
-    gap: 10px;
-  }
-  .navigation__link {
-    font-size: 10px;
-  }
+}
+.top {
+  max-width: 100%;
+  height: 100vh;
+  background-color: #161C38;
+  position: relative;
+  overflow: hidden;
+}
+.top::before {
+  content: "";
+  position: absolute;
+  width: 434px;
+  height: 434px;
+  background: rgba(154, 204, 210, 0.89);
+  top: 208px;
+  left: 398px;
+  filter: blur(320px);
+  z-index: 0;
+}
+.top::after {
+  content: "";
+  position: absolute;
+  width: 538px;
+  height: 538px;
+  background: rgba(219, 199, 152, 0.87);
+  top: -236px;
+  left: 948px;
+  filter: blur(320px);
+  z-index: 0;
+}
+.top .top__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+.top .top__container .top__background {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1;
+  pointer-events: none;
+}
+.top .top__container .top__background-item {
+  font-size: 202px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.07); /* слабая видимость */
+  white-space: nowrap;
+  letter-spacing: 5px;
+  /* лёгкий блур ближе к макету */
+  filter: blur(1px);
+}
+
+.agents {
+  display: none;
+}
+
+.top__actions {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

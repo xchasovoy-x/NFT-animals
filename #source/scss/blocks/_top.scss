@@ -1,0 +1,64 @@
+.top{
+    max-width: 100%;
+    height: 100vh;
+    background-color: #161C38;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 434px;
+        height: 434px;
+        background: rgba(154, 204, 210, 0.89);
+        top: 208px;
+        left: 398px;
+        filter: blur(320px);
+        z-index: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 538px;
+        height: 538px;
+        background: rgba(219, 199, 152, 0.87);
+        top: -236px;
+        left: 948px;
+        filter: blur(320px);
+        z-index: 0;
+    }
+    .top__container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        .top__background{
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1;
+            pointer-events: none;
+            &-item{
+                font-size: 202px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.07); /* слабая видимость */
+                white-space: nowrap;
+                letter-spacing: 5px;
+                /* лёгкий блур ближе к макету */
+                filter: blur(1px);
+            }
+        }
+    }
+}
+
+.agents{
+    display: none;
+}
+.top__actions{
+    display: none;
+}
