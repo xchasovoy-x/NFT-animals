@@ -1,6 +1,5 @@
 .top{
     max-width: 100%;
-    height: 100vh;
     background-color: #161C38;
     position: relative;
     overflow: hidden;
@@ -38,9 +37,7 @@
             z-index: 0;
             pointer-events: none;
             align-items: center;
-            gap: 160px;
-            padding: 35px 0;
-
+            gap: 158px;
             &-item{
                 font-size: 202px;
                 font-weight: 700;
@@ -59,7 +56,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            transform: translateY(160%);
+            transform: translateY(143%);
             width: 100%;
             z-index: 2;
             display: flex;
@@ -75,13 +72,48 @@
                 text-shadow: 0 0 25px rgba(0,0,0,0.35);
             }
         }
-        
+        .agents{
+            position: relative;
+            width: 100%;
+            height: 876px;
+            pointer-events: none;
+            margin-top: 48px;
+            display: flex;
+            align-items: flex-end;
+            .agent {
+                position: absolute;
+                &--giraffe {
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    width: 600px;
+                    z-index: 5;
+                }
+                &--wolf {
+                    left: 54%;
+                    width: 600px;
+                    z-index: 4;
+                    filter: blur(2px);
+                }
+                &--goat {
+                    right: 50%;
+                    width: 606px;
+                    z-index: 4;
+                    filter: blur(4px);
+                }
+                &--bear {
+                    right: 63%;
+                    width: 492px;
+                    filter: blur(6px);
+                    opacity: 0.93;
+                    z-index: 3;
+                }
+            }
+        }
     }
 }
 
-.agents{
-    display: none;
-}
+
 .top__actions{
     display: none;
 }

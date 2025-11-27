@@ -253,7 +253,6 @@ button {
 }
 .top {
   max-width: 100%;
-  height: 100vh;
   background-color: #161C38;
   position: relative;
   overflow: hidden;
@@ -293,8 +292,7 @@ button {
   z-index: 0;
   pointer-events: none;
   align-items: center;
-  gap: 160px;
-  padding: 35px 0;
+  gap: 158px;
 }
 .top .top__container .top__background-item {
   font-size: 202px;
@@ -313,7 +311,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(160%);
+  transform: translateY(143%);
   width: 100%;
   z-index: 2;
   display: flex;
@@ -329,9 +327,43 @@ button {
   opacity: 0.9;
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
 }
-
-.agents {
-  display: none;
+.top .top__container .agents {
+  position: relative;
+  width: 100%;
+  height: 876px;
+  pointer-events: none;
+  margin-top: 48px;
+  display: flex;
+  align-items: flex-end;
+}
+.top .top__container .agents .agent {
+  position: absolute;
+}
+.top .top__container .agents .agent--giraffe {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 600px;
+  z-index: 5;
+}
+.top .top__container .agents .agent--wolf {
+  left: 54%;
+  width: 600px;
+  z-index: 4;
+  filter: blur(2px);
+}
+.top .top__container .agents .agent--goat {
+  right: 50%;
+  width: 606px;
+  z-index: 4;
+  filter: blur(4px);
+}
+.top .top__container .agents .agent--bear {
+  right: 63%;
+  width: 492px;
+  filter: blur(6px);
+  opacity: 0.93;
+  z-index: 3;
 }
 
 .top__actions {
