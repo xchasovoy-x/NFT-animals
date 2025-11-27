@@ -39,6 +39,7 @@
             align-items: center;
             gap: 158px;
             &-item{
+                font-family: 'Roboto Condensed';
                 font-size: 202px;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -63,6 +64,7 @@
             justify-content: center;
             white-space: nowrap;
             .title{
+                font-family: 'Roboto Condensed';
                 position: relative;
                 font-size: 202px;
                 font-weight: 700;
@@ -110,10 +112,24 @@
                 }
             }
         }
+        .top__actions{
+            position: absolute;
+            bottom: 85px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 6;
+            .btn-cya{
+                width: 310px;
+                height: 92px;
+                font-size: 25px;
+                border-radius: 50px;
+                background-color: rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba($color: #fff, $alpha: 0.30);
+                backdrop-filter: blur(20px);   
+                box-shadow: 0px 0px 53px 0px rgba(171, 154, 210, 0.5);    
+            }
+        }
     }
 }
 
 
-.top__actions{
-    display: none;
-}

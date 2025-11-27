@@ -295,6 +295,7 @@ button {
   gap: 158px;
 }
 .top .top__container .top__background-item {
+  font-family: "Roboto Condensed";
   font-size: 202px;
   font-weight: 700;
   text-transform: uppercase;
@@ -319,6 +320,7 @@ button {
   white-space: nowrap;
 }
 .top .top__container .top__content .title {
+  font-family: "Roboto Condensed";
   position: relative;
   font-size: 202px;
   font-weight: 700;
@@ -365,9 +367,22 @@ button {
   opacity: 0.93;
   z-index: 3;
 }
-
-.top__actions {
-  display: none;
+.top .top__container .top__actions {
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+}
+.top .top__container .top__actions .btn-cya {
+  width: 310px;
+  height: 92px;
+  font-size: 25px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 53px 0px rgba(171, 154, 210, 0.5);
 }
 
 /*# sourceMappingURL=styles.css.map */
