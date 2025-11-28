@@ -224,12 +224,13 @@ button {
     height: 100vh;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
+    z-index: 6;
   }
   .navigation__list.navigation__list--active {
     transform: translateY(0%);
   }
 }
-@media (max-width: 393px) {
+@media (max-width: 438px) {
   .header {
     height: 60px;
   }
@@ -383,6 +384,87 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px);
   box-shadow: 0px 0px 53px 0px rgba(171, 154, 210, 0.5);
+}
+
+@media (max-width: 1360px) {
+  .top .top__container .agents .agent--bear {
+    display: none;
+  }
+  .top .top__container .top__background .top__background-item {
+    letter-spacing: 0;
+  }
+  .top .top__container .top__content .title {
+    letter-spacing: 0px;
+  }
+}
+@media (max-width: 860px) {
+  .top .top__container .top__background {
+    gap: 102px;
+  }
+  .top .top__container .top__background .top__background-item {
+    font-size: 132px;
+    line-height: 102px;
+  }
+  .top .top__container .top__content .title {
+    font-size: 132px;
+  }
+  .top .top__container .agents {
+    height: 693px;
+    margin-top: 10px;
+  }
+  .top .top__container .agents .agent--giraffe {
+    width: 485px;
+  }
+  .top .top__container .agents .agent--wolf {
+    width: 485px;
+  }
+  .top .top__container .agents .agent--goat {
+    width: 550px;
+  }
+  .top .top__container .top__actions {
+    bottom: 55px;
+  }
+  .top .top__container .top__actions .btn-cya {
+    width: 280px;
+    height: 82px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 438px) {
+  .top .top__container .top__background {
+    gap: 60px;
+  }
+  .top .top__container .top__background .top__background-item {
+    font-size: 70px;
+    line-height: 62px;
+  }
+  .top .top__container .top__content {
+    transform: translateY(170%);
+  }
+  .top .top__container .top__content .title {
+    font-size: 70px;
+  }
+  .top .top__container .agents {
+    height: 496px;
+    margin-top: 5px;
+  }
+  .top .top__container .agents .agent--giraffe {
+    width: 350px;
+  }
+  .top .top__container .agents .agent--wolf {
+    width: 350px;
+  }
+  .top .top__container .agents .agent--goat {
+    width: 355px;
+  }
+  .top .top__container .top__actions {
+    bottom: 30px;
+  }
+  .top .top__container .top__actions .btn-cya {
+    width: 210px;
+    height: 50px;
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
