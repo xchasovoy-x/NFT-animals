@@ -1,0 +1,49 @@
+.collection{
+    background-color: #1D2235;
+    height: 1805px;
+    position: relative;
+    overflow: hidden;
+    &__glow{
+        position: absolute;
+        content: "";
+        z-index: 1;
+        filter: blur(500px);
+        &--left{
+            width: 1021px;
+            height: 1107px;
+            background-color: rgba($color: #DBC798, $alpha: 0.87);
+            top: 0;
+            left: -45%;
+            border-radius: 50%;
+        }
+        &--right{
+            width: 1354px;
+            height: 1358px;
+            background-color: rgba($color: #9ACCD2, $alpha: 0.89);
+            top: 0;
+            right: -85%;
+            border-radius: 50%;
+        }
+    }
+    &__animal {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 380px;
+        height: 780px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: .9;
+        z-index: 2;
+
+        &--left {
+            left: -90px;
+            background-image: url("../../../img/жирафБ.png");
+        }
+
+        &--right {
+            right: -90px;
+            background-image: url("../../../img/волкБ.png");
+        }
+    }
+}

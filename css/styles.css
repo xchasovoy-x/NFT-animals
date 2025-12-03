@@ -630,5 +630,52 @@ button {
     font-size: 36px;
   }
 }
+.collection {
+  background-color: #1D2235;
+  height: 1805px;
+  position: relative;
+  overflow: hidden;
+}
+.collection__glow {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  filter: blur(500px);
+}
+.collection__glow--left {
+  width: 1021px;
+  height: 1107px;
+  background-color: rgba(219, 199, 152, 0.87);
+  top: 0;
+  left: -45%;
+  border-radius: 50%;
+}
+.collection__glow--right {
+  width: 1354px;
+  height: 1358px;
+  background-color: rgba(154, 204, 210, 0.89);
+  top: 0;
+  right: -85%;
+  border-radius: 50%;
+}
+.collection__animal {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 380px;
+  height: 780px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.9;
+  z-index: 2;
+}
+.collection__animal--left {
+  left: -90px;
+  background-image: url("../../../img/жирафБ.png");
+}
+.collection__animal--right {
+  right: -90px;
+  background-image: url("../../../img/волкБ.png");
+}
 
 /*# sourceMappingURL=styles.css.map */
