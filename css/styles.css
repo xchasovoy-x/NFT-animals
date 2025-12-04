@@ -45,6 +45,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  background-color: inherit;
 }
 
 button::-moz-focus-inner {
@@ -70,6 +71,10 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
+  font-weight: inherit;
+}
+
+strong {
   font-weight: inherit;
 }
 
@@ -142,6 +147,9 @@ button {
   padding: 16px;
   border: 1px solid #fff;
   border-radius: 30px;
+}
+.header__button_wallet:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .header__group {
@@ -384,6 +392,10 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px);
   box-shadow: 0px 0px 53px 0px rgba(171, 154, 210, 0.5);
+}
+.top .top__container .top__actions .btn-cya:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
 }
 
 @media (max-width: 1360px) {
@@ -660,22 +672,114 @@ button {
 }
 .collection__animal {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 380px;
-  height: 780px;
+  bottom: 0;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.9;
-  z-index: 2;
+  opacity: 0.8;
+  z-index: 1;
 }
 .collection__animal--left {
-  left: -90px;
+  width: 706px;
+  left: 0%;
   background-image: url("../../../img/жирафБ.png");
 }
 .collection__animal--right {
-  right: -90px;
+  width: 800px;
+  right: 0;
   background-image: url("../../../img/волкБ.png");
+}
+.collection__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  padding: 120px 20px 200px;
+  justify-content: space-between;
+}
+.collection__container .collection__title {
+  font-family: "Roboto Condensed";
+  font-size: 70px;
+  font-weight: 700;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+.collection__container .collection__desc {
+  max-width: 815px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #A0A3AC;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+}
+.collection__container .collection__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px 24px;
+  height: 1175px;
+}
+
+@media (max-width: 1300px) {
+  .collection__container .collection__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 16px;
+  }
+}
+.agent-card {
+  width: 415px;
+  height: 580px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #FFF;
+  border-radius: 20px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px 23px;
+}
+.agent-card__info {
+  width: 100%;
+}
+.agent-card__info .agent-card__name {
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 11px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.agent-card__info .agent-card__stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+.agent-card__info .agent-card__stats .agent-card__value {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.agent-card__info .agent-card__stats .agent-card__value-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #A0A3AC;
+}
+.agent-card__info .agent-card__stats .agent-card__value-count {
+  font-size: 25px;
+  font-weight: 400;
+}
+.agent-card__info .agent-card__btn {
+  width: 380px;
+  height: 50px;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.agent-card__info .agent-card__btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /*# sourceMappingURL=styles.css.map */
