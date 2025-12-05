@@ -94,7 +94,7 @@
     .navigation__button{
         display: flex;
         position: relative;
-        z-index: 7;
+        z-index: 8;
     }
     .navigation__list{
         position: absolute;
@@ -109,7 +109,7 @@
         height: 100vh;
         transform: translateY(-100%);
         transition: transform .3s ease;
-        z-index: 6;
+        z-index: 7;
     }
     .navigation__list.navigation__list--active{
         transform: translateY(0%);
