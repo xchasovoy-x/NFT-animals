@@ -598,9 +598,6 @@ button {
 }
 
 @media (max-width: 768px) {
-  .about {
-    height: 85vh;
-  }
   .about__container {
     padding: 50px 20px 40px;
   }
@@ -633,7 +630,7 @@ button {
     font-size: 16px;
   }
 }
-@media (max-width: 434px) {
+@media (max-width: 438px) {
   .about__container .about__text {
     gap: 5px;
     font-size: 14px;
@@ -751,7 +748,17 @@ button {
   }
   .collection__container .collection__grid {
     height: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 438px) {
+  .collection__container {
+    padding: 30px 10px 20px;
+  }
+  .collection__container .collection__title {
+    font-size: 50px;
+    text-align: center;
   }
 }
 .agent-card {
@@ -838,6 +845,14 @@ button {
     width: 300px;
     height: 40px;
     font-size: 18px;
+  }
+}
+@media (max-width: 438px) {
+  .agent-card {
+    width: 285px;
+  }
+  .agent-card .agent-card__btn {
+    width: 250px;
   }
 }
 

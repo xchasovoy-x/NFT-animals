@@ -86,3 +86,12 @@
         }
     }
 }
+
+@media (max-width: 438px) {
+    .agent-card{
+        width: 285px;
+        .agent-card__btn{
+            width: 250px;
+        }
+    }   
+}

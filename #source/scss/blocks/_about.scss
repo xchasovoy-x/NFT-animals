@@ -120,7 +120,6 @@
 
 @media (max-width: 768px) {
     .about{
-        height: 85vh;
         &__container{
             padding: 50px 20px 40px;
             .about__title {
@@ -155,7 +154,7 @@
     }
 }
 
-@media (max-width: 434px) {
+@media (max-width: 438px) {
     .about__container .about__text {
         gap: 5px;
         font-size: 14px;

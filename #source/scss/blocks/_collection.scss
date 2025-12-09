@@ -109,8 +109,18 @@
         }
         .collection__grid {
             height: 100%;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+            overflow-x: hidden;
         }
     }
-    
+}
+
+@media (max-width: 438px) {
+    .collection__container {
+        padding: 30px 10px 20px;
+        .collection__title {
+            font-size: 50px;
+            text-align: center;
+        }
+    }
 }
