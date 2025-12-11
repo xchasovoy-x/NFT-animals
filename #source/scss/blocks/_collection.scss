@@ -37,13 +37,13 @@
         &--left {
             width: 706px;
             left: 0%;
-            background-image: url("../../../img/жирафБ.png");
+            background-image: url("../img/жирафБ.png");
         }
 
         &--right {
             width: 800px;
             right: 0;
-            background-image: url("../../../img/волкБ.png");
+            background-image: url("../img/волкБ.png");
         }
     }
     &__container{
@@ -91,7 +91,7 @@
         width: 1235px;
         left: 50%;
         transform: translateX(-50%);
-        background-image: url(../../../img/жираф.png);
+        background-image: url(../img/жираф.png);
     }
     .collection__animal--right {
         display: none;

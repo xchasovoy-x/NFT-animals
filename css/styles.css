@@ -508,7 +508,7 @@ button {
 }
 .about__leaves {
   position: absolute;
-  background: url("../../../img/leaves.png") no-repeat;
+  background: url("../img/leaves.png") no-repeat;
   z-index: 0;
   width: 545px;
   height: 700px;
@@ -679,12 +679,12 @@ button {
 .collection__animal--left {
   width: 706px;
   left: 0%;
-  background-image: url("../../../img/жирафБ.png");
+  background-image: url("../img/жирафБ.png");
 }
 .collection__animal--right {
   width: 800px;
   right: 0;
-  background-image: url("../../../img/волкБ.png");
+  background-image: url("../img/волкБ.png");
 }
 .collection__container {
   height: 100%;
@@ -729,7 +729,7 @@ button {
     width: 1235px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url(../../../img/жираф.png);
+    background-image: url(../img/жираф.png);
   }
   .collection__animal--right {
     display: none;
@@ -882,7 +882,7 @@ button {
   background-size: contain;
   opacity: 0.8;
   z-index: 1;
-  background-image: url(../../../img/frankenstein.png);
+  background-image: url(../img/frankenstein.png);
   left: 80%;
   transform: translateX(-50%);
   width: 1250px;
